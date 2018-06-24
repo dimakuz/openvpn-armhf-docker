@@ -1,7 +1,7 @@
-FROM arm64v8/alpine:3.7
-LABEL image=ficoos/openvpn:arm64v8
-ENV ARCH arm64v8
-MAINTAINER Saggi Mizrahi "saggi@mizrahi.cc"
+FROM arm32v7/alpine:3.7
+LABEL image=dimakuz/openvpn-armhf
+ENV ARCH arm32v7
+MAINTAINER Dima Kuznetsov "dmitrykuzn@gmail.com"
 
 RUN apk update && \
     apk add openvpn
